@@ -3,7 +3,7 @@ import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { axiosInstance } from './utils/axios';
 import Register from './pages/Register';
 import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
+import DashBoard from './pages/DashBoard';
 import Setup2FA from './pages/Setup2FA';
 
 const App = () => {
@@ -47,7 +47,7 @@ const App = () => {
       />
       <Route
         path="/dashboard"
-        element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />}
+        element={isAuthenticated ? <DashBoard /> : <Navigate to="/login" />}
       />
       <Route
         path="/2fa"
