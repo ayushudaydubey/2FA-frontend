@@ -4,7 +4,8 @@ import axios from 'axios';
 const baseURL =
   import.meta.env.MODE === 'development'
     ? 'http://localhost:3000'
-    : 'https://twofa-backend-3tsn.onrender.com';
+    : 'https://twofa-backend-jlj1.onrender.com';
+
 
 export const axiosInstance = axios.create({
   baseURL,
